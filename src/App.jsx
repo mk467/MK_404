@@ -8,7 +8,7 @@ function App() {
 return(
 <>
   <div style={{backgroundColor:"purple",height:"100vh",width:"100%",marginTop:"0%"}}>
-<div style={{}}>
+<div style={{color:"white"}}>
     ffffffffffff
 </div>
   </div>
