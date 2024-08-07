@@ -1,17 +1,24 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./style.css";
+import { Footer } from "./Components/Footer";
+import { NavBar } from "./Components/NavBar";
+import { Home } from "./Components/Home";
+
 
 
 
 function App() {
 return(
 <>
-  <div style={{backgroundColor:"purple",height:"100vh",width:"100%",marginTop:"0%"}}>
-<div style={{color:"white"}}>
-    TestingWorked
-</div>
-  </div>
+  <BrowserRouter>
+  <NavBar/>
+  <Routes>
+    <Route path="/" element={<Home />} />
+    <Route path="*" element={<Home />} />
+  </Routes>
+  <Footer/>
+  </BrowserRouter>
 </>
 
 
