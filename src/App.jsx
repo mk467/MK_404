@@ -2,9 +2,10 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Footer } from "./Components/Footer";
 import { NavBar } from "./Components/NavBar";
-import { Home } from "./Components/Home";
+import { Home } from "./Components/Homee";
 import { Canvas } from "./Components/Canvas";
 import { Customizer } from "./Components/Customizer";
+import ThreeJSComponent from "./Components/ThreeJSComponent";
 
 
 
@@ -12,12 +13,9 @@ import { Customizer } from "./Components/Customizer";
 function App() {
 return(
 <>
-<main className="app transition-all ease-in">
-<Home/>
-<Canvas/>
-<Customizer/>
-
-</main>
+<div className="app transition-all ease-in w-full h-screen">
+  <ThreeJSComponent/>
+</div>
 </>
 
 
