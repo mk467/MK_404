@@ -16,6 +16,12 @@ return(
 <div className="app transition-all ease-in w-full h-screen">
   <ThreeJSComponent/>
 </div>
+<BrowserRouter>
+<Routes>
+  <Route path="/" element={<Home/>} />
+  <Route path="/e" element={<Customizer/>} />
+</Routes>
+</BrowserRouter>
 </>
 
 

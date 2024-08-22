@@ -5,7 +5,7 @@ import { lineSpinner } from 'ldrs'
 
 
 
-export const Home=()=>{
+export const Homee=()=>{
   const { unityProvider } = useUnityContext({
     loaderUrl: "Build/Build.loader.js",
     dataUrl: "Build/Build.data",
