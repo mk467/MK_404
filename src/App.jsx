@@ -14,6 +14,7 @@ return(
 <>
 
 <BrowserRouter>
+  <NavBar/>
 <Routes>
   <Route path="/" element={<Room/>} />
 </Routes>
