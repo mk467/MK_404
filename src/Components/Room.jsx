@@ -55,15 +55,17 @@ export const Room = () => {
   };
 
   return (
-    <div style={{ paddingTop: "10vh", display: "flex", flexWrap: "wrap", gap: "20px", width: "100%", justifyContent: "center" }}>
+    <div>
+    <div style={{ paddingTop: "10vh", display: "flex", flexWrap: "wrap",justifyContent:"center",alignItems:"center",backgroundColor:"rgb(251, 246, 253)"}}>
       {zft.map((zfitat, index) => (
-        <div className="card" key={index} style={{ width: "200px", display: "flex", flexDirection: "column", alignItems: "center", padding: "10px", border: "1px solid #ddd", borderRadius: "8px" }}>
-          <img src={zfitat.image} alt={zfitat.description} style={{ width: "100%", borderRadius: "8px" }} />
+        <div className="card" key={index} style={{ width: "200px",height:"500px", display: "flex", flexDirection: "column",alignItems:"center",justifyContent:"center",padding:"20px",margin:"5px",backgroundColor:"#FFFFFF",borderRadius:"20px",borderColor:"rgb(4, 4, 4)"}}>
+          <img src={zfitat.image} alt={zfitat.description} style={{ width: "100%", borderRadius: "18px" }} />
           <h2>{zfitat.name}</h2>
           <p>{zfitat.description}</p>
           <button onClick={addto}>Add New Card</button>
         </div>
       ))}
     </div>
+ </div>
   );
 }

@@ -5,6 +5,7 @@ import { NavBar } from "./Components/NavBar";
 import { Canvas } from "./Components/Canvas";
 import { Customizer } from "./Components/Customizer";
 import { Room } from "./Components/Room";
+import { Bannertop } from "./Components/Bannertop";
 
 
 
@@ -15,9 +16,10 @@ return(
 
 <BrowserRouter>
   <NavBar/>
-<Routes>
-  <Route path="/" element={<Room/>} />
-</Routes>
+  <Bannertop/>
+  <Routes>
+    <Route path="/" element={<Room/>} />
+  </Routes>
 </BrowserRouter>
 </>
 

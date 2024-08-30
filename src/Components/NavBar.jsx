@@ -9,7 +9,7 @@ export const NavBar = () => {
     },[])
     const go=useNavigate()
   return (
-    <div style={{display:"flex",justifyContent:"space-between",height:"8vh",width:"100%",position:"fixed",zIndex:"3"}}>
+    <div style={{display:"flex",justifyContent:"space-between",height:"8vh",width:"100%",position:"fixed",zIndex:"3",backgroundColor:"gray"}}>
         <div style={{fontSize:"40px",margin:"auto 20px",color:"white"}}>LOGO</div>
         <div style={{margin:"auto 0px",display:"flex"}}>
             <div onClick={
@@ -25,6 +25,7 @@ export const NavBar = () => {
             <div onClick={
                 ()=>{
                     go("/")
+                    
                 }} 
                 style={{cursor:"pointer",textDecoration:"none",padding:"10px",color:"white",textAlign:"center",width:"70px"}}>test2</div>
             <div onClick={
