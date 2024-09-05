@@ -1,6 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
+import dummy from "./dummy.js"
 
 export const Room = () => {
+
+  
   const [zft, setAnimals] = useState([
     {
       name: "person1",
@@ -41,8 +44,15 @@ export const Room = () => {
       name: "person6",
       image: "src/image/person6.jpg",
       description: "person 6 image and name"
+    },
+    {
+      name: "person6",
+      image: "src/image/person6.jpg",
+      description: "person 6 image and name"
     }
   ]);
+
+  const [dummy,setdummy]=useState(dummy)
 
   const addto = () => {
     const newAnimal = {
@@ -50,7 +60,7 @@ export const Room = () => {
       image: "src/image/person2.jpg",
       description: "eeeeeeeeeeeeee"
     };
-    setAnimals([...zft, newAnimal]); // This properly adds a new item to the array
+    setAnimals([...zft, newAnimal]);
     console.log(zft);
   };
 
@@ -58,13 +68,15 @@ export const Room = () => {
     <div>
     <div style={{ paddingTop: "10vh", display: "flex", flexWrap: "wrap",justifyContent:"center",alignItems:"center",backgroundColor:"rgb(251, 246, 253)"}}>
       {zft.map((zfitat, index) => (
-        <div className="card" key={index} style={{ width: "200px",height:"500px", display: "flex", flexDirection: "column",alignItems:"center",justifyContent:"center",padding:"20px",margin:"5px",backgroundColor:"#FFFFFF",borderRadius:"20px",borderColor:"rgb(4, 4, 4)"}}>
+        
+        <div className="card" key={index} style={{ width: "200px",height:"400px", display: "flex", flexDirection: "column",alignItems:"center",justifyContent:"center",padding:"20px",margin:"5px",backgroundColor:"#FFFFFF",borderRadius:"10px",borderColor:"rgb(4, 4, 4)"}}>
           <img src={zfitat.image} alt={zfitat.description} style={{ width: "100%", borderRadius: "18px" }} />
           <h2>{zfitat.name}</h2>
           <p>{zfitat.description}</p>
           <button onClick={addto}>Add New Card</button>
         </div>
       ))}
+      <div>eeee</div>
     </div>
  </div>
   );

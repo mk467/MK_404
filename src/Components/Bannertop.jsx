@@ -8,11 +8,12 @@ export const Bannertop = () => {
 useEffect(()=>{
   const interval = setInterval(() => {
     setRotatee(prerot=>{
-      const newrotate=prerot+ 1 % 360;;
-      console.log((randFloat(10,20).toString().slice(0,6)))
+      const newrotate=prerot+1;
+
+      //1==2?console.log(true):console.log(false)
       return newrotate;
     })
-  }, [1000]);
+  }, [100]);
 
   return () => clearInterval(interval);
 
@@ -30,16 +31,13 @@ useEffect(()=>{
             transition: 'transform 1s linear'
           }}
         />
-        <div
-          className='raindrop'
-          style={{
-            backgroundColor: 'pink',
-            height: '50px',
-            width: '20px',
-            position: 'absolute',
-            left: '10px',
-          }}
-        ></div>
+        
+        
+      </div>
+      <div>
+        <div style={{height:"80px",width:"100%",position:"absolute",backgroundColor:"blue"}}>
+          <p style={{position:"absolute",backgroundColor:"red",height:"100px"}}>ANIMATED TEXT</p>
+        </div>
       </div>
         
     </div>
