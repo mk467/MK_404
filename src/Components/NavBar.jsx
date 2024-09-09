@@ -9,7 +9,7 @@ export const NavBar = () => {
     },[])
     const go=useNavigate()
   return (
-    <div style={{display:"flex",justifyContent:"space-between",height:"8vh",width:"100%",position:"fixed",zIndex:"3",backgroundColor:"gray"}}>
+    <div style={{display:"flex",justifyContent:"space-between",height:"8vh",width:"100%",position:"fixed",zIndex:"3",backgroundColor:"#3B3745"}}>
         <div style={{fontSize:"40px",margin:"auto 20px",color:"white"}}>LOGO</div>
         <div style={{margin:"auto 0px",display:"flex"}}>
             <div onClick={
@@ -17,27 +17,9 @@ export const NavBar = () => {
                     go("/");console.log("eeee");
                 }} 
                 style={{cursor:"pointer",textDecoration:"none",padding:"10px",color:"white",textAlign:"center",width:"70px"}}>HOME</div>
-            <div onClick={
-                ()=>{
-                   // go("/")
-                }} 
-                style={{cursor:"pointer",textDecoration:"none",padding:"10px",color:"white",textAlign:"center",width:"70px"}}>test1</div>
-            <div onClick={
-                ()=>{
-                    go("/")
-                    
-                }} 
-                style={{cursor:"pointer",textDecoration:"none",padding:"10px",color:"white",textAlign:"center",width:"70px"}}>test2</div>
-            <div onClick={
-                ()=>{
-                    go("/")
-                }} 
-                style={{cursor:"pointer",textDecoration:"none",padding:"10px",color:"white",textAlign:"center",width:"70px"}}>test3</div>
-            <div onClick={
-                ()=>{
-                    go("/")
-                }} 
-                style={{cursor:"pointer",textDecoration:"none",padding:"10px",color:"white",textAlign:"center",width:"70px"}}>test4</div>
+            
+            
+            
                         <div style={{margin:"auto 20px"}}><RiSearchLine style={{fontSize:"40px",color:"white"}}/></div>
 
             <div onClick={
