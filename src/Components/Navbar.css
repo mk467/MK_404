@@ -1,0 +1,21 @@
+.productbutton:hover{
+    font-size: 200%;
+    color: rgb(255, 0, 212);
+    transition: 1s;
+}
+
+.productbutton{
+    font-size: 200%;
+    color: rgb(252, 252, 252);
+    margin: 10px;
+    transition: 1s;
+
+}
+
+.panel1{
+    width: 100%;
+    background-color: rgb(10, 124, 124);
+    top: 8%;
+    transition: 1s;
+
+}
