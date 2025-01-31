@@ -1,21 +1,87 @@
-.productbutton:hover{
-    font-size: 200%;
-    color: rgb(255, 0, 212);
-    transition: 1s;
+/* Basic reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.productbutton{
-    font-size: 200%;
-    color: rgb(252, 252, 252);
-    margin: 10px;
-    transition: 1s;
-
+/* Navbar container styling */
+.navbar {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
 }
 
-.panel1{
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 12px;
+  transition: 1s;
+}
+
+.nav-links a:hover {
+  background-color: #555;
+  border-radius: 4px;
+  transition: 1s;
+}
+
+/* Hamburger for mobile view */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
     width: 100%;
-    background-color: rgb(10, 124, 124);
-    top: 8%;
-    transition: 1s;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    left: 0;
+  }
 
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+.brand {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: blueviolet;
+}
+
+.logo {
+  height: 70px;
 }
